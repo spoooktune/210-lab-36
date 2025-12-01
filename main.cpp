@@ -14,6 +14,6 @@ int main() {
         }
     }
     codes.close();
-    // tree.displayInOrder();
+    tree.displayInOrder();
     return 0;
 }
