@@ -1,16 +1,11 @@
 #include <iostream>
 #include "IntBinaryTree.h"
+#include <fstream>
 using namespace std;
 
 int main() {
+    ifstream codes;
     IntBinaryTree tree;
-    tree.insertNode(4);
-    tree.insertNode(5);
-    tree.insertNode(3);
-    tree.displayInOrder();
-    cout << endl;
-    tree.displayPreOrder();
-    cout << endl;
-    tree.displayPostOrder();
+    
     return 0;
 }
