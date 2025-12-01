@@ -4,20 +4,16 @@
 using namespace std;
 
 int main() {
+    IntBinaryTree tree;
     ifstream codes;
     codes.open("codes.txt");
     if (codes.good()){
-        cout << "File is open" << endl;
+        string tempC;
+        while (getline(codes, tempC)){
+            tree.insertNode(tempC);
+        }
     }
     codes.close();
-    IntBinaryTree tree;
-    tree.insertNode("bc");
-    tree.insertNode("ab");
-    tree.insertNode("cd");
-    tree.displayInOrder();
-    cout << endl;
-    tree.displayPreOrder();
-    cout << endl;
-    tree.displayPostOrder();
+    // tree.displayInOrder();
     return 0;
 }
