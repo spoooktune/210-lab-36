@@ -1,3 +1,5 @@
+#include <string>
+using namespace std;
 // Specification file for the IntBinaryTree class
 #ifndef INTBINARYTREE_H
 #define INTBINARYTREE_H
